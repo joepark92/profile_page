@@ -202,6 +202,7 @@ input.addrem {
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .toddleft {
