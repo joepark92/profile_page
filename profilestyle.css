@@ -196,12 +196,31 @@ input.addrem {
 .otherusers {
     font-weight: bold;
     padding: 20px;
-    align-items: center;
-    justify-content: space-between;
 }    
 
 .todde {
-    
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.toddleft {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+p {
+    padding: 5px;
+}
+
+.philk {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.philleft {
+    display: inline-flex;
 }
 
 img.profilepic {
