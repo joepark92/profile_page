@@ -25,7 +25,7 @@
                     <img class="userimage" src="./icons/bulls.jpg" alt="user">
                 </div>
                 <div class="usermain">
-                    <div class="username">Joe Park</div>
+                    <h1 class="username">Joe Park</h1>
                     <div class="userlocation">
                         <img class="mini" src="./icons/map-marker.png" alt="map">  Los Angeles
                     </div>
@@ -35,7 +35,7 @@
                     </div>
                     <div>
                         <img class="mini" src="./icons/gear.png" alt="gear">
-                        <a href="#">  edit profile</a>
+                        <a onclick="editName()" href="#">  edit profile</a>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
             <!-- connection request box -->
             <div class="requestbox">
                 <div class="reqheader">
-                    <div class="requestnum">2</div>
+                    <span id="reqnumber" class="requestnum">2</span>
                     <h3>Connection Requests</h3>
                 </div>
                 <div class="reqbody">
@@ -68,8 +68,8 @@
                                 <p>Todd E</p>
                             </div>
                             <div>    
-                                <input class="addrem" type="image" src="./icons/accept-circle.png">
-                                <input class= "addrem" type="image" src="./icons/close-circle.png">
+                                <input class="addrem" onclick="addButton(this)" type="image" src="./icons/accept-circle.png">
+                                <input class="addrem" onclick="remButton(this)" type="image" src="./icons/close-circle.png">
                             </div>
                         </div>
                         <div class="philk">
@@ -78,8 +78,8 @@
                                 <p>Phil K</p>
                             </div>
                             <div>
-                                <input class="addrem" type="image" src="./icons/accept-circle.png">
-                                <input class= "addrem" type="image" src="./icons/close-circle.png">
+                                <input class="addrem" onclick="addButton(this)" type="image" src="./icons/accept-circle.png">
+                                <input class="addrem" onclick="remButton(this)" type="image" src="./icons/close-circle.png">
                             </div>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
             <!-- your connections box -->
             <div class="connectbox">
                 <div class="connheader">
-                    <div class="totalconnect">500+</div>
+                    <span id="totalconNumber" class="totalconnect">500</span>
                     <h3>Your Connections</h3>
                 </div>
                 <div class="connbody">
@@ -107,5 +107,11 @@
             <!-- your connections end -->
         </div>
     </div>
+    <form id="newname">
+        <h2 id="newnameheader">Enter new name here</h2>
+        <input id="newnamebox" type="text" autocomplete="off"> 
+        <button id="newnamebtn" type="button" onclick="addNewName()">Submit</button>
+    </form>
+<script src="./script.js"></script>
 </body>
 </html>

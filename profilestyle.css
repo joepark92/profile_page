@@ -88,7 +88,8 @@ h2 {
         border-color: rgb(192, 183, 183);
     }
 
-    .username {
+    h1.username {
+        color: black;
         padding-top: 50px;
         padding-left: 20px;
         padding-bottom: 10px;
@@ -283,4 +284,35 @@ ul.connectedusers li {
 
 .viewmore {
     padding: 15px;
+}
+
+/* change name box */
+
+#newnameheader {
+    text-align: center;
+    padding: 0px;
+}
+
+#newname {
+    position: absolute;
+    top: 35%;
+    left: 350px;
+    height: 150px;
+    width: 300px;
+    background-color: darkslategray;
+    color: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#newnamebox {
+    width: 175px;
+    margin: 20px 0px;
+}
+
+#newnamebtn {
+    padding: 5px;
 }
